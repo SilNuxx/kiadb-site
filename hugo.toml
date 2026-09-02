@@ -1,3 +1,23 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = "https://k-db.sysnetadm.ru/"
+
+locale = "ru"
+defaultContentLanguage = "ru"
+
+title = "K-DB"
+
+author = "SilNuxx"
+copyright = "K-DB"
+
+theme = "tailwind"
+
+[params]
+    subtitle = "Tested on myself"
+    contentTypeName = "posts"
+
+    [params.header]
+        logo = "logo.svg"
+        title = ""
+
+    [params.footer]
+        since = 2026
+        poweredby = false
