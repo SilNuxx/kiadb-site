@@ -10,9 +10,14 @@ copyright = "K-DB"
 
 theme = "tailwind"
 
+[markup]
+    _merge = 'deep'
+
 [params]
     subtitle = "Tested on myself"
     contentTypeName = "posts"
+
+    showAuthor = true
 
     [params.header]
         logo = "logo.svg"
