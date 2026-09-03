@@ -13,6 +13,10 @@ theme = "tailwind"
 [markup]
     _merge = 'deep'
 
+[caches]
+    [caches.images]
+        dir = ':cacheDir/images'
+
 [params]
     subtitle = "Tested on myself"
     contentTypeName = "posts"
