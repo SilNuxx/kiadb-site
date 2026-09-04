@@ -1,4 +1,4 @@
-baseURL = "https://k-db.sysnetadm.ru/"
+baseURL = "https://silnuxx.github.io/"
 
 locale = "ru"
 defaultContentLanguage = "ru"
@@ -30,3 +30,20 @@ theme = "tailwind"
     [params.footer]
         since = 2026
         poweredby = false
+
+[menu]
+    [[menu.main]]
+        identifier = 'posts'
+        name = 'Посты'
+        pageRef = '/posts'
+        weight = 10
+    [[menu.main]]
+        identifier = 'about'
+        name = 'Обо мне'
+        pageRef = '/about'
+        weight = 11
+
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+series = 'series'
