@@ -1,0 +1,49 @@
+baseURL = "https://silnuxx.github.io/"
+
+locale = "ru"
+defaultContentLanguage = "ru"
+
+title = "K-DB"
+
+author = "SilNuxx"
+copyright = "K-DB"
+
+theme = "tailwind"
+
+[markup]
+    _merge = 'deep'
+
+[caches]
+    [caches.images]
+        dir = ':cacheDir/images'
+
+[params]
+    subtitle = "Tested on myself"
+    contentTypeName = "posts"
+
+    showAuthor = true
+
+    [params.header]
+        logo = "logo.svg"
+        title = ""
+
+    [params.footer]
+        since = 2026
+        poweredby = false
+
+[menu]
+    [[menu.main]]
+        identifier = 'posts'
+        name = 'Посты'
+        pageRef = '/posts'
+        weight = 10
+    [[menu.main]]
+        identifier = 'about'
+        name = 'Обо мне'
+        pageRef = '/about'
+        weight = 11
+
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+series = 'series'

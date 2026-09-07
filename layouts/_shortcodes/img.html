@@ -1,0 +1,23 @@
+{{ $imgName := .Get "src" }}
+{{ $width := .Get "w" | default "1920"}}
+{{ $height := .Get "h" | default "1080"}}
+{{ $alt := .Get "alt" | default $imgName}}
+
+{{ $image := .Page.Resources.GetMatch (printf "**/%s" $imgName) }}
+
+<figure>
+    {{ if $image }}
+        <img src="{{ $image.RelPermalink }}"
+             width="{{ $image.Width }}"
+             height="{{ $image.Height }}"
+             alt="{{ $alt }}">
+    {{ else }}
+        {{ $fallbackText := printf "Ожидается: %s" $imgName }}
+        {{ $remoteURL := printf "https://placehold.jp/%sx%s.png" $width $height}}
+        <img src="{{ $remoteURL }}"
+             width="{{ $width }}"
+             height="{{ $height }}"
+             alt="{{ $alt }}">
+        <figcaption>{{ $fallbackText }}</figcaption>
+    {{ end }}
+</figure>
