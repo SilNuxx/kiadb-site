@@ -1,6 +1,6 @@
 +++
 date = '2026-09-07T15:51:14+03:00'
-draft = true
+draft = false
 author = 'SilNuxx'
 title = 'Развёртывание Active Directory в Windows Server'
 
