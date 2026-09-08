@@ -1,6 +1,6 @@
 +++
 date = '2026-09-07T08:16:48+03:00'
-draft = true
+draft = false
 author = 'SilNuxx'
 title = 'Установка Windows Server 2022'
 
