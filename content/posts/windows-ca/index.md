@@ -1,6 +1,6 @@
 +++
 date = '2026-09-08T06:27:49+03:00'
-draft = true
+draft = false
 title = 'Развёртывание центра сертификации в Windows Server'
 
 author = 'SilNuxx'
